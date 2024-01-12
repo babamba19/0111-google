@@ -13,10 +13,10 @@ ul{
 }
 /* 상단 */
 header{
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 nav{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 20px;
     text-align: right;
 }
@@ -66,4 +66,148 @@ nav span:hover{
 #login:hover{
     background-color: #3464b8;
     transition: all 0.3s;
+}
+.main-wrap{
+    text-align: center;
+    /* background-color: bisque; */
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search_bar{
+    /* background-color: cadetblue; */
+    width: 40%;
+    max-width: 560px;
+    min-width: 320px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 3px 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search_bar a img{
+    width: 24px;
+    margin-left: 10px;
+}
+.fa-search{
+    margin: 10px;
+}
+.search_bar input{
+    width: 85%;
+    border: 0;
+    outline: none;
+}
+/* 플러스 */
+.plus{
+    width: 50%;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+}
+.plus ul{
+    display: flex;
+    justify-content: space-between;
+}
+.plus ul li{
+    position: relative;
+}
+.plus ul li a{
+    width: 107px;
+    height: 107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+.plus ul li a img{
+    width: 30px;
+    /* height: 30px; */
+    position: absolute;
+    top: 20px;
+}
+.plus ul li a span{
+    font-size: 14px;
+    color: #333;
+    line-height: 17px;
+    /* 말줄임 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+    text-overflow: ellipsis;/* 말줄임 표시 (...)추가 */
+    max-width: 80px;/* 최대 너비 설정 */
+    overflow: hidden; /* 넘침 처리 */
+}
+.hover-bg{
+    width: 107px;
+    height: 107px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    opacity: 0;
+}
+.plus ul li:hover .hover-bg{
+    opacity: 1;
+}
+.plus ul li:hover .hover-bg img{
+    opacity: 1;
+    /* transition: all 0.6s; */
+    transition-delay: 0.7s;
+}
+
+.hover-bg img{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    opacity: 0;
+}
+
+.bg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+button{
+    display: inline-block;
+    height: 30px;
+    border: 0;
+    padding: 3 25px;
+    margin: 0 3px;
+    background-color: #f4f4f4;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #666;
+    cursor: pointer;
+}
+button:hover{
+    border: 1px solid #ccc;
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button{
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* =======공지사항 */
+#container{
+    background: url("../images/notice.jpg");
+    width: 250px;
+    height: 375px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    margin-bottom: 30px;
 }
